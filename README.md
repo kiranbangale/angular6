@@ -11,7 +11,8 @@ Bindings:
   Two-way binding - [( )]
   
 Directives:
-  *- structural directive - *ngIf
+
+  * - structural directive - *ngIf
   - attribute directive - [ ngStyle]={}
   
 String interpolation vs Property binding:
