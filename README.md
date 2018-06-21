@@ -1,6 +1,6 @@
  Batrang vs Augury
 
-# - Local reference, viewChild - access local reference of view in component code
+#- Local reference, viewChild - access local reference of view in component code
 
 In development mode angular dirty checks twice
 
