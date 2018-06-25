@@ -1,9 +1,9 @@
-Project Setup:
-sudo npm i -g @angular/cli@latest
-ng new myApp
-cd myApp
-ng serve
-npm i --save bootstrap@3
+#Project Setup:
+  * sudo npm i -g @angular/cli@latest
+  * ng new myApp
+  * cd myApp
+  * ng serve
+  * npm i --save bootstrap@3
 
 Project Branching Strategy:
 master - Angular CLI Code Boilerplate
