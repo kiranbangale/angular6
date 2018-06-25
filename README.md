@@ -1,35 +1,43 @@
-Project setup:
-sudo npm i -g @angular/cli@latest
-ng new myApp
-cd myApp
-ng serve
-npm i --save bootstrap@3
+# Project Setup:
+  * sudo npm i -g @angular/cli@latest
+  * ng new myApp
+  * cd myApp
+  * ng serve
+  * npm i --save bootstrap@3
 
-Batrang vs Augury
+# Project Branching Strategy:
+ * gh-pages - For hosting final project (git checkout --orphan gh-pages)
+ * master - Angular CLI Code Boilerplate
+ * develop - myApp
 
-#- Local reference, viewChild - access local reference of view in component code
+# Angular Notes:
+ * Batrang vs Augury
 
-In development mode angular dirty checks twice
+ * Local reference(#), viewChild - access local reference of view in component code
 
-Bindings:
-String interpolation - {{ }}
-Property binding - [ ]
-Event binding - ( )
-Two-way binding - [( )]
+ * In development mode angular dirty checks twice
 
-Directives:
+ * Bindings:
+  String interpolation - {{ }}
+  Property binding - [ ]
+  Event binding - ( )
+  Two-way binding - [( )]
 
-- - structural directive - \*ngIf
+ * Directives:
+  - structural directive - \*ngIf
+  (*) attribute directive - [ ngStyle]={}
 
-* attribute directive - [ ngStyle]={}
+ * String interpolation vs Property binding:
+  src={{recipe.imagePath}}
+  [src]="recipe.imagePath"
 
-String interpolation vs Property binding:
-src={{recipe.imagePath}}
-[src]="recipe.imagePath"
+ * Component communication:
+  Child to Parent - @input - broadcasting - property binding
+  Parent to Child - @output - emitting - event binding
 
-Component communication:
-Child to Parent - @input - broadcasting - property binding
-Parent to Child - @output - emitting - event binding
+ * View encapsulation:
+  Shadow DOM - emulated, native, none
+  
 
-View encapsulation:
-Shadow DOM - emulated, native, none
+README.md fromat guide
+https://github.com/jxnblk/Microbeats/issues/7
