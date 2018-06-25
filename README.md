@@ -5,35 +5,35 @@
   * ng serve
   * npm i --save bootstrap@3
 
-Project Branching Strategy:
-master - Angular CLI Code Boilerplate
-develop - myApp
+# Project Branching Strategy:
+ * gh-pages - For hosting final project
+ * master - Angular CLI Code Boilerplate
+ * develop - myApp
 
-Batrang vs Augury
+# Angular Notes
+ * Batrang vs Augury
 
-#- Local reference, viewChild - access local reference of view in component code
+ * Local reference(#), viewChild - access local reference of view in component code
 
-In development mode angular dirty checks twice
+ * In development mode angular dirty checks twice
 
-Bindings:
-String interpolation - {{ }}
-Property binding - [ ]
-Event binding - ( )
-Two-way binding - [( )]
+ * Bindings:
+  String interpolation - {{ }}
+  Property binding - [ ]
+  Event binding - ( )
+  Two-way binding - [( )]
 
-Directives:
+ * Directives:
+  - structural directive - \*ngIf
+  (*) attribute directive - [ ngStyle]={}
 
-- - structural directive - \*ngIf
+ * String interpolation vs Property binding:
+  src={{recipe.imagePath}}
+  [src]="recipe.imagePath"
 
-* attribute directive - [ ngStyle]={}
+ * Component communication:
+  Child to Parent - @input - broadcasting - property binding
+  Parent to Child - @output - emitting - event binding
 
-String interpolation vs Property binding:
-src={{recipe.imagePath}}
-[src]="recipe.imagePath"
-
-Component communication:
-Child to Parent - @input - broadcasting - property binding
-Parent to Child - @output - emitting - event binding
-
-View encapsulation:
-Shadow DOM - emulated, native, none
+ * View encapsulation:
+  Shadow DOM - emulated, native, none
