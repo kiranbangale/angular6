@@ -1,4 +1,4 @@
-#Project Setup:
+# Project Setup:
   * sudo npm i -g @angular/cli@latest
   * ng new myApp
   * cd myApp
