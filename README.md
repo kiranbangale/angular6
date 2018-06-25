@@ -39,5 +39,5 @@
   Shadow DOM - emulated, native, none
   
 
-README.md fromat guide
+README.md format guide
 https://github.com/jxnblk/Microbeats/issues/7
