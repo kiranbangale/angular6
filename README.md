@@ -38,6 +38,12 @@
  * View encapsulation:
   Shadow DOM - emulated, native, none
   
+# RxJs Notes:
+ * Observables - Awaits for events
+ * Observers - Executes on events
+ * Subjects - Observable as well as Observer. Emits new data conveniently whenever required. Use Subjects instead of emitors for cross component cummunication.
+ * Operator - Transforms data.
+  
 
 README.md format guide
 https://github.com/jxnblk/Microbeats/issues/7
