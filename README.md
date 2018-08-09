@@ -12,6 +12,8 @@
 - master - Angular CLI Code Boilerplate
 - develop - myApp
 
+https://github.com/angular-schule/angular-cli-ghpages
+
 # Angular Notes:
 
 - Batrang vs Augury
