@@ -9,21 +9,24 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      'A test recipe 1',
-      'recipe 1 description',
+      'Chocolava Cake',
+      'Description',
       'assets/chocoLavaCake.jpeg',
       [new Ingredient('chocolate', 2), new Ingredient('cake', 1)]
     ),
     new Recipe(
-      'A test recipe 2',
-      'recipe 2 description',
-      'assets/chocoLavaCake.jpeg',
-      [new Ingredient('chocolate', 5), new Ingredient('ice-cream cake', 1)]
+      'Veg Burger',
+      'Description',
+      'assets/vegBurger.jpeg',
+      [new Ingredient('burger bun', 1), new Ingredient('veggies', 3)]
     )
   ];
   constructor(private shoppingListService: ShoppingListService) {}
   getRecipes() {
     return this.recipes.slice();
+  }
+  getRecipe(index: number) {
+    return this.recipes[index];
   }
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.shoppingListService.addIngredients(ingredients);
