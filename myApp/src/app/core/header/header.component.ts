@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-import * as fromApp from '../../ngrx/app.reducers';
-import * as fromAuth from '../../auth/ngrx/auth.reducers';
-import * as AuthActions from '../../auth/ngrx/auth.actions';
-// import * as RecipeActions from '../../recipes/ngrx/recipe.actions';
+import * as fromApp from '../../store/app.reducers';
+import * as fromAuth from '../../auth/store/auth.reducers';
+import * as AuthActions from '../../auth/store/auth.actions';
+// import * as RecipeActions from '../../recipes/store/recipe.actions';
 
 @Component({
   selector: 'app-header',

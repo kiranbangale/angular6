@@ -1,7 +1,7 @@
 import { ActionReducerMap } from '@ngrx/store';
 
-import * as fromShoppingList from '../shopping-list/ngrx/shopping-list.reducers';
-import * as fromAuth from '../auth/ngrx/auth.reducers';
+import * as fromShoppingList from '../shopping-list/store/shopping-list.reducers';
+import * as fromAuth from '../auth/store/auth.reducers';
 
 export interface AppState {
   shoppingList: fromShoppingList.State;
